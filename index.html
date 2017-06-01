@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="zh-CN&q">
+  <head>
+ 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="DATA HOUSE数据屋导航,全能搜，遇见不一样的江大人">
+    <meta name="keywords" content="数据屋导航">
+	<meta name="author" content="frankxff">
+    <link rel="icon" href="./imgs/logo.ico">
+	
+    <title>DATA HOUSE</title>
+	<!--jqueryUI-->
+	<link href="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!--fullpage-->
+	<link href="https://cdn.bootcss.com/fullPage.js/2.9.4/jquery.fullpage.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<link href="./css/reset.css" rel="stylesheet">
+	<script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+  </head>
+  
+  <body >
+  <nav style="border:none;opacity:0.6" class="navbar navbar-default navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a style="color:#C9C9C9;" class="navbar-brand" href="index.html">江大数据屋</a>
+        </div>
+		
+        <div style=".collapse{width:95%}" id="navbar" class="navbar-collapse navbar-inverse collapse">
+          <ul class="nav navbar-nav">
+           <li><a href="http://www.jhun.edu.cn" target="_blank">江大官网</a></li>
+			<li><a href="http://210.42.72.73:888/jwweb" target="_blank">教务在线</a></li>
+			<li><a href="http://www.lib.jhun.edu.cn/" target="_blank">图书馆</a></li>
+			
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">网络课程 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.uooconline.com/" target="_blank">优课联盟</a></li>
+				<li><a href="http://jhun.fy.chaoxing.com/portal/" target="_blank">网络教学平台</a></li>
+				<li><a href="http://210.42.72.73:8091/indexx.asp" target="_blank">网课资源中心</a></li>
+				<li><a href="http://tsk.erya100.com/indexCourseShowAction" target="_blank">超星尔雅通识课</a></li>
+				<li><a href="http://www.icourses.cn/home/" target="_blank">大学视频公开课</a></li>
+              </ul>
+            </li>
+			
+			<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">考试报名 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://210.42.72.73:8091/cet/" target="_blank">英语四六级</a></li>
+				<li><a href="http://119.97.236.29/NCRE_EMS/studentlogin.aspx" target="_blank">计算机等级</a>
+              </ul>
+            </li>
+			
+			<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多查询 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://210.42.72.169/?mp_sourceid=0.1.2/" target="_blank">体测打卡</a></li>
+				<li><a href="http://cet.99sushe.com/" target="_blank">英语四六级</a></li>
+				<li><a href="http://my.jhun.edu.cn/" target="_blank">一卡通查询</a></li>
+              </ul>
+            </li>
+			
+			<li><a href="http://wsyh.jhun.edu.cn/" target="_blank">支付平台</a></li>
+			<li><a href="http://weixiao.qq.com/weixin_project/calendar/schoolCalendar.html?weixinOpenInfo=gh_dee55e19b130&media_id=gh_dee55e19b130" target="_blank">校历</a></li>
+            <li><a href="https://www.hao123.com/" target="_blank">hao123</a></li>		
+			
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="setindex.html" target="_blank">设为首页</a></li>
+			<li><a href="liuyan.html" class="hrefs" target="_blank">留言板</a></li> 
+			<!--
+			<li><a href="javascript:window.external.AddFavorite('http://www.jdrdh.cn', '江大人导航jdrdh.cn')">加入收藏</a></li>
+			-->
+			<li><a href="about.html" class="hrefs" target="_blank">数据屋<span style="color:red;" class="badge text-danger">hot</span></a></li>
+			
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<div id="full">
+	<!--one page-->
+	<!--background imgs
+	http://i2.muimg.com/1949/57371c44a4dc48f7.png
+	-->
+	<div style="background-image:url(./imgs/tiankong.png);background-size:100%" class="section">
+    <!-- Fixed navbar -->
+    
+   <div class="container">
+  <!--
+  
+  	描述：仅在屏幕尺寸小于 768px 可见
+  -->
+
+  <div class="visible-xs">
+    <div class="row sLOGO">
+      <div class="col-xs-6 col-xs-offset-3">
+		<center>
+		<!--本地
+        <a href="index.html"><img size=200px id="LOGO" data-src="./imgs/sjw.png"  alt="Responsive image"></a>
+		-->
+		<a href="./index.html"><img style="width:100px;" class="img-responsive" id="LOGO" src="http://omdl5nbjm.bkt.clouddn.com/sjw.png"  alt="Responsive image"></a>
+		</center>
+       <br/>
+      </div>
+    </div>
+  </div>
+  
+  
+   
+  <!--
+  
+  	描述：仅在屏幕尺寸大于 768px 可见
+  -->
+
+  <div class="hidden-xs"> 
+    <div class="row LOGO">
+      <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">
+	  <center>
+	  <!--
+        <a href="./index.html"><img id="LOGO" data-src="./imgs/sjw.png"  alt="Responsive image"></a>
+		-->
+		<a href="./index.html"><img id="LOGO" src="http://omdl5nbjm.bkt.clouddn.com/sjw.png"  alt="Responsive image"></a>
+	  </center>
+      </div>
+    </div>
+  </div>
+  
+  <form action="http://www.baidu.com/s" method="get" target="_blank">
+  <div class="input-group input-group-lg">
+ 	  <span style="background-color:#337AB7;color:white;" class="input-group-addon">全能搜</span>
+      
+	  <input type="text" style="color:white"  class="form-control text-primary searchss" name="search" id="search" autofocus="autofocus" placeholder="输入关键词，再点击下方相应按钮，即可检索。 " baiduSug="2"  value="" >
+	  <span id="tishi" style="font-weight:bold"></span> 
+  </div>
+  
+    <P><center>
+	<div style="margin-bottom:5px ;" class="btn-black ">
+		<div class="btn-group" role="group" >
+			<input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary btn-lg radius"/>
+			<input type="submit" value="学术" id="bdxs" button type="button" class="btn btn-primary btn-lg radius "/>
+		</div>
+			<input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary btn-lg radius" data-toggle="tooltip" data-placement="top" title="仅海外vpn可用，否则选择谷歌镜像"/>
+	    <div class="btn-group" role="group" >
+			<input type="submit" value="谷歌镜像①" id="google1" button type="button" class="btn btn-primary btn-lg radius"/>
+			<input type="submit" value="②" id="google2" button type="button" class="btn btn-primary btn-lg radius"/>
+			<input type="submit" value="学术" id="xueshu" button type="button" class="btn btn-primary btn-lg radius"/>
+	    </div>
+		<input type="submit" value="Wikipedia" id="wiki" button type="button" class="btn btn-primary btn-lg radius"/>
+	</div>
+    <input type="submit" value="京东" id="jd" button class="btn btn-primary radius" />
+    <input type="submit" value="淘宝" id="taobao" button class="btn btn-primary radius" />
+   <input type="submit" value="微信" id="weixin" button class="btn btn-primary radius" />
+    <input type="submit" value="知乎" id="zhihu" button class="btn btn-primary radius" />
+    <input type="submit" value="微博" id="weibo" button class="btn btn-primary radius"/>
+    <input type="submit" value="豆瓣" id="douban" button class="btn btn-primary radius"/>
+    <input type="submit" value="音乐" id="gequ" button class="btn btn-primary radius"/>
+    <input type="submit" value="网盘" id="panci" button class="btn btn-primary radius"/>
+	 <input type="submit" value="翻译" id="fanyi" button class="btn btn-primary radius"/>
+	<input type="submit" value="BT磁力" id="bt" button class="btn btn-primary radius"/>
+    <input type="submit" value="GitHub" id="github" button class="btn btn-primary radius"/>
+	<input type="submit" value="WolframAlpha" id="wolf" button type="button" class="btn btn-primary radius" data-toggle="tooltip" data-placement="top" title="key words must be English"/>
+  </center></P>
+  
+   
+  	</form>
+
+
+  <!--
+	
+	描述：搜索框完
+-->
+
+  <!--小屏-->
+  <div class="visible-xs">
+  <br>
+  <center>
+	<div id="phone">
+		<p><br>全能、简约、轻松！数据屋导航，遇见不一样的江大人！<br>Jdrdh.cn<br>推荐使用电脑端访问，内容更丰富！效果更酷炫！<br></p>
+		<a class="btn btn-success btn-md" href="liuyanphone.html">留言&建议</a>
+	<br><br>
+	</div>
+  </center>
+  <br>
+  </div> 
+  
+  <!--大屏-->
+  <div class="hidden-xs">
+       <br>
+       <br><br>
+       <br><br>
+  <center>
+    <p style="color:#797979">全能、简约、轻松！数据屋导航，遇见不一样的你！ Jdrdh.cn！</p>
+<!-- Button trigger modal -->
+<button style="color:#797979" type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="该站为优秀网站交流分享平台，所有内容均源自互联网，除【数据屋导航】外的所有网站内容归网站所有者所有；不对非本站链接问题而产生的损失承担相应责任。">免责声明</button>
+	 <!--
+	 <a style="color:#797979" class="text-warning" href="#">donation</a> 
+	 &nbsp; -->
+	 <small style="color:#797979">Google镜像由第三方网站提供 &nbsp;&nbsp; Powered by frankxff</small>
+    <br> 	  
+  </center>
+  </div>
+</ul>	
+
+
+
+ </div>
+	</div>
+ 
+	<!--two page-->
+<div style="font-family:微软雅黑;" class="section hidden-xs">
+	<!--one slide--->
+ <div class="slide hidden-xs">
+	<div class="container table-responsive">
+	<center>
+	<table style="border: 0px solid transparent !important; text-align:middle;font-family:宋体; color:#00B388;" class="table table-condensed" >
+		<tr>
+			<td >
+			<a href="https://www.baidu.com/" target="_blank"><img data-src="./imgs/bd.gif"></img>百度</a>
+			•
+			<a href="https://tieba.baidu.com/" target="_blank">贴吧</a>
+			</td>
+			<td>
+			<a href="http://www.sina.com.cn/" target="_blank"><img data-src="./imgs/wb.png"></img>新浪</a>
+			•
+			<a href="http://weibo.com/" target="_blank">微博</a>
+			</td>
+			<td>
+			<a href="http://www.qq.com/" target="_blank"><img data-src="./imgs/tx.png"></img>腾讯</a>
+			•
+			<a href="https://qzone.qq.com/" target="_blank">QQ空间</a>
+			</td>
+			<td >
+			<a href="http://www.163.com/" target="_blank"><img data-src="./imgs/wy.png"></img>网易</a>
+			•
+			<a href="http://email.163.com/" target="_blank">邮箱</a>
+			</td>
+				<td>
+			<a href="https://wx.qq.com/" target="_blank"><img data-src="./imgs/wxwy.jpg"></img>微信网页版</a>
+			</td>
+			</td>
+			<td>
+			<a href="http://www.mooc.cn/" target="_blank"><img data-src="./imgs/mk.png"></img>MOOC中国</a>
+			</td>
+		</tr>
+	</table>
+	</center>
+	<!--图片nav-->
+	<div  id="picnav">
+	
+		<div class="float">
+			<center>
+			<h3 style="color:#00B388">知识</h3>
+			<a href="https://en.wikipedia.org/" target="_blank"><img class="yuanjiao inline img-responsive" data-src="./imgs/wikipedia.png"></img></a>
+			维基百科<br>
+			</center>
+			<div class="link">
+			<a  href="https://www.zhihu.com/" target="_blank">知乎</a>
+			<a href="http://wiki.mbalib.com/wiki/" target="_blank" >MBA智库</a>
+			<a href="http://zh.wikihow.com/" target="_blank" >WikiHow</a>
+			<a href="https://www.ted.com/" target="_blank" >TED</a>
+			<a href="https://www.khanacademy.org/" target="_blank">可汗学院</a>
+			<a href="https://open.163.com/" target="_blank">网易公开课</a>
+			<a href="http://study.163.com/" target="_blank">网易云课堂</a>
+			<a href="http://www.duobei.com/"target="_blank">多贝公开课</a>
+			<a href="https://www.coursera.org/"target="_blank">Coursera</a>
+			<a href="http://www.dxy.cn/" target="_blank">丁香园</a>
+			<a href="https://www.quora.com/" target="_blank">Quora</a>
+			</div>
+		</div>
+		<div class="float">
+		<center>
+		<h3 style="color:#00B388">视频</h3>
+			<a href="http://youku.com/" target="_blank"><img class="yuanjiao inline img-responsive" data-src="./imgs/youku.png"></img></a>
+			优酷<br>
+			</center>
+			<div class="link">
+			<a href="http://www.iqiyi.com/" target="_blank">爱奇艺</a>
+			
+			<a href="http://www.bilibili.com/" target="_blank">Bilibili</a>
+			<a href="http://www.acfun.cn/" target="_blank">AcFun</a>
+			<a href="https://v.qq.com/" target="_blank" >腾讯视频</a>
+			<a href="http://www.mgtv.com/" target="_blank">芒果TV</a>
+			<a href="http://tv.sohu.com/" target="_blank">搜狐视频</a>
+			<a href="http://www.le.com/" target="_blank">乐视视频</a>
+			<a href="https://vimeo.com/" target="_blank">Vimeo</a>
+			<a href="https://www.youtube.com/" target="_blank">Youtube</a>
+			</div>
+		</div>
+		<div class="float">
+			<center>
+			<h3 style="color:#00B388">电影</h3>
+			<a href="https://movie.douban.com/" target="_blank"><img class="yuanjiao inline img-responsive" data-src="./imgs/movies.png"></img></a>
+			豆瓣电影<br>
+			</center>
+			<div class="link">
+			<a href="http://www.80s.tw/" target="_blank">80S</a>
+			<a href="http://www.dygod.net/" target="_blank">电影天堂</a>
+			<a href="http://dianying.fm/" target="_blank">电影FM</a>
+			<a href="http://cn163.net/" target="_blank">天天美剧</a>
+			<a href="http://www.allyingshi.com/" target="_blank">人人影视</a>
+			<a href="https://www.cupfox.com/" target="_blank">Cupfox</a>
+			<a href="https://torrents.me/" target="_blank">Torrents.me</a>
+			<a href="http://splayer.org/" target="_blank">射手网</a>
+			</div>
+		</div>
+		<div class="float">
+			<center>
+			<h3 style="color:#00B388">购物</h3>
+			<a href="https://www.taobao.com/" target="_blank"><img class="yuanjiao inline img-responsive" data-src="./imgs/taobao.png"></img></a>
+			淘宝<br>
+			</center>
+			<div class="link">
+			<a href="http://www.smzdm.com/" target="_blank">什么值得买</a>
+			<a href="https://www.tmall.com/" target="_blank">天猫</a>
+			<a href="https://www.jd.com/" target="_blank">京东</a>
+			<a href="http://www.vip.com/" target="_blank">唯品会</a>
+			<a href="http://www.mogujie.com/" target="_blank">蘑菇街</a>
+			<a href="https://www.suning.com/" target="_blank">苏宁易购</a>
+			<a href="https://www.amazon.cn/" target="_blank">亚马逊</a>
+			<a href="http://www.ebay.com/" target="_blank">eBay</a>
+			</div>
+		</div>
+		<div class="float">
+		<center>
+			<h3 style="color:#00B388">新闻</h3>
+			<a href="http://paper.people.com.cn/rmrb/" target="_blank"><img class="yuanjiao inline img-responsive" data-src="./imgs/people.jpg"></img></a>
+			人民日报<br>
+			</center>
+			<div class="link">
+			<a href="http://www.cctv.com/" target="_blank">央视网</a>
+			<a href="http://www.cankaoxiaoxi.com/" target="_blank">参考消息</a>
+			<a href="https://www3.nhk.or.jp/nhkworld/" target="_blank">NHK</a>
+			<a href="http://www.bbc.com/" target="_blank">BBC</a>
+			<a href="http://www.reuters.com/" target="_blank">路透社</a>
+			<a href="http://edition.cnn.com/" target="_blank">CNN</a>
+			<a href="https://www.wsj.com/" target="_blank">华尔街日报</a>
+			<a href="http://jandan.net/" target="_blank">煎蛋</a>
+
+			
+			</div>
+		</div>
+		<div class="float">
+			<center>
+			<h3 style="color:#00B388">书籍</h3>
+			<a href="https://www.jiumodiary.com/" target="_blank"><img class="yuanjiao inline img-responsive" data-src="./imgs/books.png"></img></a>
+			鸠摩搜书<br>
+			</center>
+			<div class="link">
+			<a href="https://book.douban.com/" target="_blank">豆瓣读书</a>
+			
+			<a href="https://shuge.org/" target="_blank">书格</a>
+			<a href="" target="_blank">好读</a>
+			<a href="https://www.amazon.cn/Kindle%E5%95%86%E5%BA%97/b?node=116087071" target="_blank">Kindle</a>
+			<a href="http://www.duokan.com/" target="_blank" >多看阅读</a>
+			<a href="https://en.wikibooks.org/wiki/Main_Page" target="_blank">Wikibooks</a>
+			<a href="http://vdisk.weibo.com/" target="_blank">微盘</a>
+			<a href="http://www.qidian.com/" target="_blank">起点中文</a>
+			</div>
+		</div>
+		<div class="float">
+			<center>
+			<h3 style="color:#00B388">设计</h3>
+			<a href="https://www.behance.net/" target="_blank"><img class="yuanjiao inline img-responsive" data-src="./imgs/behance.png"></img></a>
+			Behance<br>
+			</center>
+			<div class="link">
+			<a  href="https://dribbble.com/" target="_blank">Dribbble</a>
+			<a href="http://www.zcool.com.cn/" target="_blank" >站酷</a>
+			<a href="https://www.pinterest.com/" target="_blank">Pinterest</a>
+			
+			<a href="https://thenounproject.com/" target="_blank" >TheNounProject</a>
+			<a href="https://niice.co/" target="_blank" >Niice</a>
+			
+			<a href="http://logofaves.com/" target="_blank">Logo Faves</a>
+			<a href="http://thedesigninspiration.com/" target="_blank">DesignInspiration</a>
+			<a href="http://www.ziticq.com/"target="_blank">字体传奇</a>
+			<a href="https://www.cgbl.com/"target="_blank">CG部落</a>
+
+			</div>
+		</div>
+		<div class="float">
+			<center>
+			<h3 style="color:#00B388">游戏</h3>
+			<a href="http://store.steampowered.com/" target="_blank"><img class="yuanjiao inline img-responsive" data-src="./imgs/steam.png"></img></a>
+			steam<br>
+			</center>
+			<div class="link">
+			<a href="http://www.3dmgame.com/" target="_blank">3DM</a>
+			<a href="http://www.gamersky.com/" target="_blank">游民星空</a>
+			<a href="http://www.ali213.net/" target="_blank">游侠</a>
+			<a href="http://www.ign.xn--fiqs8s/" target="_blank">IGN</a>
+			<a href="https://www.twitch.tv/" target="_blank">Twitch</a>
+			<a href="https://www.gamespot.com/" target="_blank">Gamespot</a>
+			<a href="http://minecraft-zh.gamepedia.com/Minecraft_Wiki" target="_blank">MinecraftWiki</a>
+			</div>
+		</div>
+	 </div>		
+		
+		<center>
+		<div style="margin-bottom:2px;" >
+		<a style="color:#4F4F4F" href="fhq.html"><small>tips</small></a>
+		</div>
+		</center>
+		
+</div>
+	<!--two slide-->
+
+ <div class="slide hidden-xs">
+ <div  id="picnav">
+	<div class="float">
+		<center>
+			<h3 style="color:#00B388">编程</h3>
+			<a href="http://stackoverflow.com/" target="_blank"><img class="yuanjiao inline img-responsive" data-src="./imgs/stockflow.png"></img></a>
+			Stack Overflow<br>
+			</center>
+			<div class="link">
+			<a href="https://github.com/" target="_blank">GitHub</a>
+			<a href="http://www.csdn.net/" target="_blank">CSDN</a>
+			<a href="http://www.oschina.net/project" target="_blank">开源中国</a>
+			<a href="https://developer.apple.com/" target="_blank">Apple Developer</a>
+			<a href="http://www.gitnavi.com/" target="_blank">GitNav</a>
+			
+			<a href="https://cocoapods.org/" target="_blank">CocoaPods</a>
+			<a href="http://apis.io/" target="_blank">Apis.io</a>
+			<a href="http://www.w3cschool.cn/" target="_blank">W3school</a>
+
+			</div>
+		</div>
+		
+	<div class="float">
+		<center>
+			<h3 style="color:#00B388">图片</h3>
+			<a href="https://500px.com/popular" target="_blank"><img class="yuanjiao inline img-responsive" data-src="./imgs/500px.png"></img></a>
+			500PX<br>
+			</center>
+			<div class="link">
+			<a href="https://pixabay.com/" target="_blank">pixabay</a>
+			<a href="http://gratisography.com/" target="_blank">gratisography</a>
+			<a href="https://www.pexels.com/" target="_blank">pexels</a>
+			<a href="https://alpha.wallhaven.cc/" target="_blank">wallhaven</a>
+			<a href="https://stocksnap.io/" target="_blank">stocksnap</a>
+			<a href="http://huaban.com/" target="_blank">花瓣网</a>
+			<a href="http://www.58pic.com/" target="_blank">千图网</a>
+			<a href="http://www.nipic.com/" target="_blank">昵图网</a>
+			</div>
+		</div>
+	
+	<div class="float">	
+		<center><br><br><br><br>
+		<p style="margin-top:50%;">持续更新中...</p>
+		</center>
+	</div>
+	
+	
+
+	
+</div>
+	<!--two slide over-->
+	
+	
+	
+ </div>
+	
+	
+</div>	
+
+	
+	
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ <!--three page -->
+ <div style="background-color:white; box-shadow:0px 0px 0px 0px black inset" class="section hidden-xs" >
+	<div class="container">
+	<center>
+	<h3>工具箱</h3>
+	<br><br><br>
+	<div style="vertical-align: top;" class="ablock">
+	<a href="http://www.bingdian001.com/?p=30" target="_blank"><img data-src="./imgs/bingdian.jpg"></img>
+		<strong>冰点下载器</strong>
+		<br>无需积分也无需登录自由下载百度、豆丁、丁香、畅享、MBALib、道客巴巴、Book118等文库文档;哎，学校要是能买下百度文库授权多好啊。
+	</a>	
+	<a href="http://www.eagleget.com/cn/" target="_blank">	<img data-src="./imgs/EagleGet.png"></img>
+		<strong>EagleGet</strong>
+		<br>从网站中检测下载音频与高清视频,清晰的 1080p 与 720p 视频。<br><br>
+	</a>
+		
+	<a href="http://www.internetdownloadmanager.com/download.html" target="_blank"><img data-src="./imgs/idm.png"></img>
+		<strong>IDM</strong>
+		<br>与eagleget类似的下载器，可无缝集成到所有流行的浏览器中，下载网页中的音视频，据说可提速5倍。
+	</a>
+	<br><br>
+	<a href="http://cn.office-converter.com/" target="_blank"><img data-src="./imgs/office.png"></img>
+		<strong>万能在线转换器</strong>
+		<br>支持office文件、音视频、图片等格式转换；如pdf转doc等等<br> 
+	</a>
+	<a href="http://vip.ufanw.com/" target="_blank"><img data-src="./imgs/youfan.png"></img>
+		<strong>有范VIP视频破解器</strong>
+		<br>支持爱奇艺，优酷，腾讯视频，芒果TV,搜狐视频的一键VIP影片破解观看 
+	</a>
+	
+	</div>
+	<br>
+	
+		<strong >你有更多神器？</strong>
+		<br>快快点击 <a href="liuyan.html" target="_blank">留言板</a> 分享给数据君吧！我会尽快收录哒~
+	</a>
+	</center>
+ 
+ 
+	
+ <!--CNZZ统计-->
+	<center>
+	<div id="tongji">
+	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261415325'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261415325%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+	</div>
+	</center>
+</div>
+ 
+ <!--three over-->
+ </div>
+
+<script type="text/javascript">
+   $youziku.load("body", "ed7c5d1263364b2286700c313737f518", "jdzhonyuanjian");
+   /*$youziku.load(".nav,.btn,h1", "ed7c5d1263364b2286700c313737f518", "jdzhonyuanjian");*/
+   /*．．．*/
+   $youziku.draw();
+</script>
+
+</body>
+
+
+  			<!-- Bootstrap core JavaScript
+    ================================================== -->
+	
+	<script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</script>
+	<script src="./js/ie-emulation-modes-warning.js"></script>
+	<!--背景js
+	<script type="text/javascript" src="./js/canvas-particle.js"></script>
+	-->
+	<script src="https://cdn.bootcss.com/fullPage.js/2.9.4/jquery.fullpage.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/jquery.easings.min.js"></script>
+	<script>
+		$(function(){
+		$('#full').fullpage({
+			loopBottom:true,
+			navigation:true,
+			paddingTop:'0px',
+			fixedElements:'navbar',
+			navigationTooltips:['搜索','导航','工具箱'],
+			slidesNavigation:true,
+			slidesNavPosition:'bottom',
+			controlArrowColor:'#737373',
+		});	
+	});
+	</script>
+
+	<!-- 关于导航弹出 --> 
+	<script>
+		$(function ()
+		{ 
+		$("#example").popover();
+		});
+	</script>
+	
+	<script charset="gbk" src="./js/baidu.js"></script>
+  <script>
+    var sAddress=document.getElementsByTagName("form")[0];
+    var sInfor=document.getElementById("search");
+    var sBaidu=document.getElementById("baidu");
+    var sGoogle=document.getElementById("google");
+    var sGoogle1=document.getElementById("google1");
+    var sjd=document.getElementById("jd");
+    var stianmao=document.getElementById("tianmao");
+    var staobao=document.getElementById("taobao");
+    var sWeixin=document.getElementById("weixin");
+    var sZhihu=document.getElementById("zhihu");
+    var sweibo=document.getElementById("weibo");
+    var sdouban=document.getElementById("douban");
+    var sgequ=document.getElementById("gequ");
+
+      var sWeixin3=document.getElementById("weixin3");
+       var stieba=document.getElementById("tieba");
+     var sditu=document.getElementById("ditu");
+     var swangpan=document.getElementById("wangpan");
+
+    //百度
+    sBaidu.onclick=function(){
+      sAddress.action="https://www.baidu.com/s";
+      sInfor.name="wd";
+    }
+    //Google
+    sGoogle.onclick=function(){
+      sAddress.action="http://www.google.com/search";
+      sInfor.name="q";
+    };
+    
+    //Google镜像  2017 年 5 月 9 日 更换
+   
+    $('#google1').click(function() {
+      var query = $('#search').val();
+      if ( query ) {window.open("https://so.moyoo.net/#q=" + query , "_blank");
+        return false;
+      
+      };
+    });
+    
+	$('#google2').click(function() {
+      var query = $('#search').val();
+      if ( query ) {window.open("https://so.moyoo.net/#q=" + query , "_blank");
+        return false;
+      
+      };
+    });
+	
+	//谷歌学术
+	$('#xueshu').click(function() {
+      var query = $('#search').val();
+      if ( query ) {window.open("https://angry-fermi-7633.arukascloud.io/scholar?hl=zh-CN&q=" + query + "&btnG=&lr=", "_blank");
+        return false;
+      
+      };
+    });
+    
+    //京东（已修复）在移动端访问会跳出两次窗口（已修复）
+   
+    $('#jd').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
+        return false;
+      };
+    });
+
+
+    //天猫  搜索需求下 暂时下架
+//  stianmao.onclick=function(){
+//    sAddress.action="https://list.tmall.com/search_product.htm?";
+//    sInfor.name="q";
+//    //sInfor.type="enc=utf-8";
+//  }
+    
+    //淘宝
+    staobao.onclick=function(){
+      sAddress.action="https://s.taobao.com/search?";
+      sInfor.name="q";
+    }
+    
+      //微信  恢复上线
+     $('#weixin').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://weixin.sogou.com/weixin?type=2&query=" + query + "&ie=utf8", "_blank");
+        return false;
+      
+      };
+    });
+
+    //知乎
+    sZhihu.onclick=function(){
+      sAddress.action="https://www.zhihu.com/search";
+      sInfor.name="q";
+      sInfor.type="question";
+    }
+//    //微博 （检索异常）
+//    sweibo.onclick=function(){
+//      sAddress.action="http://s.weibo.com/weibo/?";
+//      //sInfor.name="q";
+//      //sInfor.type="question";
+//    }
+    $('#weibo').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://s.weibo.com/weibo/" + query, "_blank");
+        return false;
+      };
+    });
+
+    //豆瓣
+    sdouban.onclick=function(){
+      sAddress.action="https://www.douban.com/search?";
+      sInfor.name="q";
+      //sInfor.type="question";
+    }
+    //hao123 音乐
+  //   sgequ.onclick=function(){
+  //    sAddress.action="http://music.hao123.com/search?";
+  //    sInfor.name="key";
+  //   sInfor.type="1";
+  //  }
+    
+    
+     //改用网易云音乐检索 移动端检索出现异常
+     
+  $('#gequ').click(function() {
+    var query = $('#search').val();
+    if ( query ) {
+      window.open("http://music.163.com/#/search/m/?s=" + query + "&type=1", "_blank");
+      return false;
+       	};
+  });
+    
+	//百度学术
+ $('#bdxs').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://xueshu.baidu.com/s?wd=" + query , "_blank");
+        return false;
+      
+     	};
+    });
+
+// 胖次  另一个检索入口
+
+ $('#panci').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://www.panc.cc/s/" + query + "/td_0", "_blank");
+        return false;
+      
+     	};
+    });
+
+  
+
+//高德地图
+
+  $('#github').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("https://github.com/search?q=" + query , "_blank");
+        return false;
+      
+     	};
+    });
+//BT磁力
+
+ $('#bt').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://sou.mj0351.com/search.html?text=" + query , "_blank");
+        return false;
+      
+     	};
+    });
+
+//维基百科
+ $('#wiki').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("https://en.wikipedia.org/wiki/" + query , "_blank");
+        return false;
+      
+     	};
+    });
+
+	//wolframalpha
+ $('#wolf').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("https://www.wolframalpha.com/input/?i=" + query , "_blank");
+        return false;
+      
+     	};
+    });
+	//翻译
+ $('#fanyi').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://www.iciba.com/" + query , "_blank");
+        return false;
+      
+     	};
+    });
+  </script>
+  
+
+
+</html>
